@@ -12,7 +12,7 @@ export const InpRef = () => {
     return (
         <div>
             <input ref={inputRef}/>
-            <button onClick={save}>saVe</button>
+            <button onClick={save}>save</button>
             - actual value: {value}
         </div>
     )

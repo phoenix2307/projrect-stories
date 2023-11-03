@@ -25,8 +25,8 @@ export function Accordion(props: AccordionPropsType) {
         {!props.collapsed && <AccordionBody items={props.items} onClick={props.onClick}/>}
         <div>
             {/*<Inp changeInputValue={changeInputValue}/> - {value}*/}
-            <Inp/>
-            <InpRef/>
+            {/*<Inp/>*/}
+            {/*<InpRef/>*/}
         </div>
 
     </div>
