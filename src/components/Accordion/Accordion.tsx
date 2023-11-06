@@ -40,7 +40,7 @@ type AccordionTitlePropsType = {
 }
 
 function AccordionTitle(props: AccordionTitlePropsType) {
-    return <h3 onClick={props.click}>-- {props.title} --</h3>
+    return <h3 onClick={(e)=>props.click()}>-- {props.title} --</h3>
 }
 
 type AccordionBodyPropsType = {

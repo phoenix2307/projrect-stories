@@ -5,7 +5,7 @@ type OnOffPropsType = {
     changeToggle: (props: boolean) => void
 }
 
-function OnOff(props: OnOffPropsType) {
+export function OnOff(props: OnOffPropsType) {
 
     const onStyle = {
         width: '40px',
@@ -41,12 +41,10 @@ function OnOff(props: OnOffPropsType) {
             <div style={indicatorStyle} onClick={() => {
                 alert("TOGGLE")
             }}></div>
-            { console.log('on-off')}
         </div>
 
     )
 }
 
-export default OnOff
 
 

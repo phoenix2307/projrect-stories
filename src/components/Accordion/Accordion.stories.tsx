@@ -1,9 +1,10 @@
 import type {Meta, StoryObj} from '@storybook/react';
+import {action} from '@storybook/addon-actions'
 
 import {Accordion} from "./Accordion";
 import {useState} from "react";
 
-const meta: Meta<typeof Accordion> = {
+/*const meta: Meta<typeof Accordion> = {
     title: 'Kabzda kak prosto/Accordion',
     component: Accordion,
     parameters: {
@@ -12,15 +13,20 @@ const meta: Meta<typeof Accordion> = {
     tags: ['autodocs'],
 };
 
-export default meta;
+export default meta;*/
 
+export default {
+    component: Accordion
+}
+
+/*
 type Story = StoryObj<typeof Accordion>
 
 export const FirstStory: Story = {
     args: {
         titleValue: 'some title',
         collapsed: true,
-        onChange: ()=>{},
+        // onChange: ()=>{},
         items: [
             {title: 'Alex', value: 1},
             {title: 'Nika', value: 2},
@@ -29,7 +35,10 @@ export const FirstStory: Story = {
         onClick: ()=>{}
 
     }
-}
+}*/
+
+const onChangeHandlerCollapsed = action('onChange CollapsedAccordion')
+const onChangeHandlerOpened = action('onChange OpenedAccordion')
 
 export const CollapsedAccordion = () => {
     return (
@@ -37,8 +46,7 @@ export const CollapsedAccordion = () => {
             <Accordion
                 titleValue={'Accordion collapsed'}
                 collapsed={true}
-                onChange={() => {
-                }}
+                onChange={onChangeHandlerCollapsed}
                 items={[
                     {title: 'Alex', value: 1},
                     {title: 'Nika', value: 2},
@@ -57,8 +65,7 @@ export const OpenedAccordion = () => {
             <Accordion
                 titleValue={'Accordion opened'}
                 collapsed={false}
-                onChange={() => {
-                }}
+                onChange={onChangeHandlerOpened}
                 items={[
                     {title: 'Alex', value: 1},
                     {title: 'Nika', value: 2},
