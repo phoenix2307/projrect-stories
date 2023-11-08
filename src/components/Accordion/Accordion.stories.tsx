@@ -4,7 +4,7 @@ import {action} from '@storybook/addon-actions'
 import {Accordion} from "./Accordion";
 import {useState} from "react";
 
-/*const meta: Meta<typeof Accordion> = {
+const meta: Meta<typeof Accordion> = {
     title: 'Kabzda kak prosto/Accordion',
     component: Accordion,
     parameters: {
@@ -13,11 +13,8 @@ import {useState} from "react";
     tags: ['autodocs'],
 };
 
-export default meta;*/
+export default meta;
 
-export default {
-    component: Accordion
-}
 
 /*
 type Story = StoryObj<typeof Accordion>

@@ -1,11 +1,11 @@
 import React, {useState} from "react";
 
-type OptionsType = {
+export type OptionsType = {
     id: any // типа id
     title: string // содержимое выбраного элемента
 }
 
-type SelectType = {
+export type SelectType = {
     options: OptionsType[]
 }
 

@@ -1,5 +1,5 @@
 import React, {ChangeEvent, useState} from "react";
-import {Inp} from "../Input/Input";
+import {Input} from "../Input/Input";
 import {InpRef} from "../Input/InputRef";
 
 type ItemType = {

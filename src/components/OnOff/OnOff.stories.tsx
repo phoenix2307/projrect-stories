@@ -5,7 +5,7 @@ import {useState} from "react";
 import {action} from "@storybook/addon-actions";
 
 const meta = {
-    title: 'Components/OnOff',
+    title: 'Kabzda kak prosto/OnOff',
     component: OnOff,
     parameters: {
         layout: 'centered',

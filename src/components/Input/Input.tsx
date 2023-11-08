@@ -1,9 +1,10 @@
 import React, {ChangeEvent, ChangeEventHandler, useState} from "react";
 
-/*export type InpType = {
+export type InpType = {
     changeInputValue: (value: ChangeEvent<HTMLInputElement> | string) => void
 }
-export const Inp = (props: InpType) => {
+
+export const ControlledInput = (props: InpType) => {
 
     return (
         <div>
@@ -14,10 +15,10 @@ export const Inp = (props: InpType) => {
             }}/>
         </div>
     )
-}*/
+};
 
-export const Inp = () => {
-        const [value, setValue] = useState('')
+export const Input = () => {
+    const [value, setValue] = useState('')
     const change = (event: ChangeEvent<HTMLInputElement>) => {
         let valueChanged = event.currentTarget.value
         setValue(valueChanged)
@@ -27,4 +28,4 @@ export const Inp = () => {
             <input onChange={change}/> - {value}
         </div>
     )
-}
+};
